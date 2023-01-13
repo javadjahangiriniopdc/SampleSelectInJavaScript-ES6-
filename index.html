@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <p>javad</p>
+    <p>javad</p>
+    <p>javad</p>
+    <p id="ali">amin</p>
+    <p class="javad">taha</p>
+    <p class="javad">aaaa</p>
+    <p class="javad">bbbb</p>
+    <script>
+        // const arr_p=document.querySelectorAll('p');
+        var arr_p=document.getElementsByTagName('p');
+        for(let j=0;j<arr_p.length;j++){
+            arr_p[j].style.color='green';
+
+        }
+
+         //document.querySelector('#ali').style.color = 'blue';
+        document.getElementById('ali').style.color='blue';
+
+
+        // const nodeList = document.querySelectorAll(".javad");
+        const nodeList=document.getElementsByClassName('javad');
+        for (let i = 0; i < nodeList.length; i++) {
+            nodeList[i].style.backgroundColor = "red";
+        }
+
+        
+    </script>
+</body>
+
+</html>
